@@ -1,12 +1,16 @@
 .meat { Background-color: red;
   border: 1px solid black;
+  width: 100px;
 }
 .fruit { Background-color: Yellow;
-  border: 1px solid black;
+  border: 1px solid black
+  width: 100px;
 }
 .beverage { background-color: tan;
   border: 1px solid black;
+  width: 100px;
 }
 .vegatable { background-color: green;
   border: 1px solid black;
+  width: 100px;
 }
