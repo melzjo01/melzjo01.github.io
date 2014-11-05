@@ -1,4 +1,6 @@
-.meat { Background-color: red;}
+.meat { Background-color: red;
+  padding: 10px 20px;
+}
 .fruit { Background-color: Yellow;}
 .beverage { background-color: tan;}
 .vegatable { background-color: green;}
