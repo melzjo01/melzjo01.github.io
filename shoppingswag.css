@@ -1,5 +1,5 @@
 .meat { Background-color: red;
-  width: 10px 20px;
+  border: 1px;
 }
 .fruit { Background-color: Yellow;}
 .beverage { background-color: tan;}
