@@ -1,7 +1,11 @@
 <html>
 <title>MEMORIZE THE WORLD</title>
 <style>
-nav {position:relative; margin:20px; float:left; width:300px;}
+nav {position:relative; 
+margin:20px; 
+float:left; 
+width:300px; 
+height:150px;}
 .question {Width:300px;
 height:150px;
 Border: solid black 1px;
@@ -18,9 +22,11 @@ background-color: teal;
   text-align:center;
 }
 nav:hover .question  {display:none;}
+input:checked ~ .question {background-color:YELLOW;}
 </style>
 <body>
 <nav>
+<input type=checkbox>
 <section class=question>How much wood would a wood chuck chuck if a wood chuck could chuck wood?</section>
 <section class=answer>
   A wood chuck would chuck as much as a wood as a wood chuck could chuck if a wood chuck could chuck wood!
