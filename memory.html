@@ -18,15 +18,19 @@ background-color: teal;
 #next {position:relative;
 margin-top: 400px;
 left-margin: 400px;}
-nav:hover .question {display:none;}
+#nexts {position:relative;
+margin-top: 400px;
+left-margin: 400px;}
+nav:hover #first {display:none;}
+nav:hover #nexts {display:none;}
 </style>
 <body>
 <nav>
-<section class=question>How much wood would a wood chuck chuck if a wood chuck could chuck wood?</section>
+<section class=question id=first>How much wood would a wood chuck chuck if a wood chuck could chuck wood?</section>
 <section class=answer>
   A wood chuck would chuck as much as a wood as a wood chuck could chuck if a wood chuck could chuck wood!
 </section></nav>
-<nav><section class=question id=next>How much wood would a wood chuck chuck if a wood chuck could chuck wood?</section>
+<nav><section class=question id=nexts>How much wood would a wood chuck chuck if a wood chuck could chuck wood?</section>
 <section class=answer id=next>
   A wood chuck would chuck as much as a wood as a wood chuck could chuck if a wood chuck could chuck wood!
 </section>
