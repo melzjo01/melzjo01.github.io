@@ -1,7 +1,14 @@
 <html>
 <title>MEMORIZE THE WORLD</title>
 <style>
-nav {position:fixed;}
+#two {position:fixed;
+  width:300px;
+  height:150px;
+}
+#one {position:fixed;
+width:300px;
+height:150px;
+margin-left:400px;
 .question {Width:300px;
 height:150px;
 Border: solid black 1px;
@@ -36,11 +43,12 @@ nav:active #nexts {display:none;}
 
 </style>
 <body>
-<nav>
+<nav id=two>
 <section class=question id=first>How much wood would a wood chuck chuck if a wood chuck could chuck wood?</section>
 <section class=answer>
   A wood chuck would chuck as much as a wood as a wood chuck could chuck if a wood chuck could chuck wood!
-</section>
+</section></nav>
+<nav  id=one>
   <section  id=nexts>How much wood would a wood chuck chuck if a wood chuck could chuck wood?</section>
 <section  id=next>
   A wood chuck would chuck as much as a wood as a wood chuck could chuck if a wood chuck could chuck wood!
