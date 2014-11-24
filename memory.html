@@ -57,6 +57,16 @@ input:checked ~ .question {background-color:YELLOW;}
   The Giants.
 </section>
 </nav>
+<checkbox onclick="changeThisPageFunc();"></button>
+<h1>0</h1>
+           <script type="text/javascript">
+               counter = 0
+         changeThisPageFunc = function() {
+             counter = counter + 1
+             var Dabomb;
+             Dabomb = document.querySelector('h1')
+             Dabomb.innerHTML = counter; }    
+      </script>
 </body>
 </html>
 
