@@ -29,23 +29,30 @@ nav:hover .question  {display:none;}
 input:checked ~ .question {background-color:YELLOW;}
 </style>
 <body>
-<checkbox onclick="changeThisPageFunc();"></checkbox>
+<script type="text/javascript">
+  counter = 0
+  updateCounter = function() {
+    counter = counter + 1;
+    countSpot = document.querySelector('#myCounter');
+    countSpot.innerHTML = "Correct: " + counter;}
+  }
+</script>
 <nav>
-<input type=checkbox>
+<input type=checkbox onclick="updateCounter();">
 <section class=question>How much wood would a wood chuck chuck if a wood chuck could chuck wood?</section>
 <section class=answer>
   A wood chuck would chuck as much as a wood as a wood chuck could chuck if a wood chuck could chuck wood!
 </section>
 </nav>
 <nav>
-<input type=checkbox>
+<input type=checkbox onclick="updateCounter();">
   <section class=question>What is the meaning of life?</section>
 <section class=answer>
   42!
 </section>
 </nav>
 <nav>
-<input type=checkbox>
+<input type=checkbox onclick="updateCounter();">
   <section class=question>Want to float?</section>
 <section class=answer>
   sure why not left lol!
@@ -58,14 +65,7 @@ input:checked ~ .question {background-color:YELLOW;}
   The Giants.
 </section>
 </nav>
-           <script type="text/javascript">
-               counter = 0
-         changeThisPageFunc = function() {
-             counter = counter + 1
-             var Dabomb;
-             Dabomb = document.querySelector('inputType')
-             Dabomb.innerHTML = counter; }    
-      </script>
+<h2 id="myCounter">Counter: 0</h2>
 </body>
 </html>
 
