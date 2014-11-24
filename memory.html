@@ -33,6 +33,7 @@ input:checked ~ .question {background-color:YELLOW;}
   counter = 0
   updateCounter = function() {
     counter = counter + 1;
+    var countSpot
     countSpot = document.querySelector('#myCounter');
     countSpot.innerHTML = "Correct: " + counter;}
   }
