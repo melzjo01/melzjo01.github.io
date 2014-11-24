@@ -29,6 +29,7 @@ nav:hover .question  {display:none;}
 input:checked ~ .question {background-color:YELLOW;}
 </style>
 <body>
+<checkbox onclick="changeThisPageFunc();"></checkbox>
 <nav>
 <input type=checkbox>
 <section class=question>How much wood would a wood chuck chuck if a wood chuck could chuck wood?</section>
@@ -57,14 +58,12 @@ input:checked ~ .question {background-color:YELLOW;}
   The Giants.
 </section>
 </nav>
-<checkbox onclick="changeThisPageFunc();"></checkbox>
-<h1>0</h1>
            <script type="text/javascript">
                counter = 0
          changeThisPageFunc = function() {
              counter = counter + 1
              var Dabomb;
-             Dabomb = document.querySelector('h1')
+             Dabomb = document.querySelector('inputType')
              Dabomb.innerHTML = counter; }    
       </script>
 </body>
