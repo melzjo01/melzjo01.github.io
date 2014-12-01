@@ -31,8 +31,8 @@ input:checked ~ .question {background-color:YELLOW;}
 <body>
 <script type="text/javascript">
   counter = 0
-  updateCounter = function(spanishNumbers) {
-    theCheckbox = document.querySelector("#" +spanishNumbers);
+  updateCounter = function(cbId) {
+    theCheckbox = document.querySelector("#" +cbId);
     if (theCheckbox.checked){
       counter = counter + 1;}
       else {
@@ -42,28 +42,28 @@ input:checked ~ .question {background-color:YELLOW;}
     countSpot.innerHTML = "Correct: " + counter;}
 </script>
 <nav>
-<input id="uno" type=checkbox onclick="updateCounter(\"uno"\);">
+<input id="cb1" type=checkbox onclick="updateCounter(\"uno"\);">
 <section class=question>How much wood would a wood chuck chuck if a wood chuck could chuck wood?</section>
 <section class=answer>
   A wood chuck would chuck as much as a wood as a wood chuck could chuck if a wood chuck could chuck wood!
 </section>
 </nav>
 <nav>
-<input id="dos" type=checkbox onclick="updateCounter(\"dos"\);">
+<input id="cb2" type=checkbox onclick="updateCounter(\"dos"\);">
   <section class=question>What is the meaning of life?</section>
 <section class=answer>
   42!
 </section>
 </nav>
 <nav>
-<input id="tres" type=checkbox onclick="updateCounter(\"tres"\);">
+<input id="cb3" type=checkbox onclick="updateCounter(\"tres"\);">
   <section class=question>Want to float?</section>
 <section class=answer>
   sure why not left lol!
 </section>
 </nav>
 <nav>
-<input id="quatro" type=checkbox onclick="updateCounter(\"quatro"\);">
+<input id="cb4" type=checkbox onclick="updateCounter(\"quatro"\);">
   <section class=question>Who won the world series?</section>
 <section class=answer>
   The Giants.
