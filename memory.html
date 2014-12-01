@@ -31,34 +31,39 @@ input:checked ~ .question {background-color:YELLOW;}
 <body>
 <script type="text/javascript">
   counter = 0
-  updateCounter = function() {
-    counter = counter + 1
+  updateCounter = function(spanishNumbers) {
+    theCheckbox = document.querySelector("#" +spanishNumbers);
+    if (theCheckbox.checked){
+      counter = counter + 1;}
+      else {
+        counter = counter - 1;
+      }
     countSpot = document.querySelector('#myCounter');
     countSpot.innerHTML = "Correct: " + counter;}
 </script>
 <nav>
-<input type=checkbox onclick="updateCounter();">
+<input id="uno" type=checkbox onclick="updateCounter(\"uno\");">
 <section class=question>How much wood would a wood chuck chuck if a wood chuck could chuck wood?</section>
 <section class=answer>
   A wood chuck would chuck as much as a wood as a wood chuck could chuck if a wood chuck could chuck wood!
 </section>
 </nav>
 <nav>
-<input type=checkbox onclick="updateCounter();">
+<input id="dos" type=checkbox onclick="updateCounter(\"dos\");">
   <section class=question>What is the meaning of life?</section>
 <section class=answer>
   42!
 </section>
 </nav>
 <nav>
-<input type=checkbox onclick="updateCounter();">
+<input id="tres" type=checkbox onclick="updateCounter(\"tres\");">
   <section class=question>Want to float?</section>
 <section class=answer>
   sure why not left lol!
 </section>
 </nav>
 <nav>
-<input type=checkbox onclick="updateCounter();">
+<input id="quatro" type=checkbox onclick="updateCounter(\"quatro\");">
   <section class=question>Who won the world series?</section>
 <section class=answer>
   The Giants.
