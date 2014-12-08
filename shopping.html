@@ -5,15 +5,15 @@
 <ul id=grocerylist>
 </ul>
 <label for="gl1">Item:</label>
-<input type="text" size="40" id=gl1>
+<input type="text" size="20" id=gl1>
 <label for="gl2">Class:</label>
-<input type="text" size="30" id=gl2>
+<input type="text" size="10" id=gl2>
 <button onclick="makelist()">ADD ME!!</button>
 <script type="text/javascript">
   makelist = function() {
     L = document.querySelector("#grocerylist")
     UL = document.createElement("li")
-    contents = document.createTextNode("#gl1")
+    contents = document.querySelector("#gl1").value
     UL.appendChild(contents)
     L.appendChild(UL)
   }
