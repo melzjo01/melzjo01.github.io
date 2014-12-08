@@ -9,18 +9,21 @@
 <label for="gl2">Class:</label>
 <select id="gl2">
 <option>meat</option>
-<option>dairy</option>
+<option>beverage</option>
+<option>fruit</option>
 <option>vegatable</option>
 </select>
 <button onclick="makelist()">ADD ME!!</button>
 <script type="text/javascript">
   makelist = function() {
+    mytextbox = document.querySelector("#gl1")
     L = document.querySelector("#grocerylist")
     UL = document.createElement("li")
     addItem = document.querySelector('#gl1').value
     contents = document.createTextNode(addItem)
     UL.appendChild(contents)
     L.appendChild(UL)
+    mytextbox.value = ""
   }
 </script>
 </body>
