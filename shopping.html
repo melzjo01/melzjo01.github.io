@@ -7,6 +7,14 @@
 <input type="text" size="40" id=gl1>
 <input type="text" size="30" id=gl2>
 <button onclick="makelist()">ADD ME!!</button>
-<script type="text/javascript"></script>
+<script type="text/javascript">
+  makelist = function() {
+    L = document.querySelector("#grocerylist")
+    UL = document.createElement("li")
+    contents = document.createTextNode("#gl1")
+    UL.appendChild(contents)
+    L.appendChild(UL)
+  }
+</script>
 </body>
 </html>
