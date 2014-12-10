@@ -14,3 +14,5 @@
   border: 1px solid black;
   width: 100px;
 }
+
+input:checked~.li {text-decoration:line-through;}
