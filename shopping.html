@@ -29,7 +29,19 @@
     L.appendChild(UL)
     UL.classList.add(Class.value)
     mytextbox.value = ""
+    CL.checked=checkme;
   }
+  checkme = function(){
+  theCheckBox = document.querySelector("input")
+  theCheckBox.type = "checkbox"
+  if (theCheckBox.checked){
+    UL = document.querySelector("li")
+    UL.classList.add(done)}
+    else {
+      UL = document.querySelector("li")
+      UL.classList.add("")}
+  }
+  
 </script>
 </body>
 </html>
