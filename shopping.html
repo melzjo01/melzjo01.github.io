@@ -19,10 +19,14 @@
     mytextbox = document.querySelector("#gl1")
     L = document.querySelector("#grocerylist")
     UL = document.createElement("li")
+    CL = document.createElement("checkbox")
+    Class = document.querySelector('#gl2')
     addItem = document.querySelector('#gl1').value
     contents = document.createTextNode(addItem)
+    UL.appendChild(CL)
     UL.appendChild(contents)
     L.appendChild(UL)
+    UL.classList.add(Class.value)
     mytextbox.value = ""
   }
 </script>
